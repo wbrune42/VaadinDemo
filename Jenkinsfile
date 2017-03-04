@@ -9,22 +9,22 @@ node() {
 		}
     }
 
-    stage 'compile' {
-		withMaven( maven: 'Maven3.3.9', mavenSettinsConfig: 'MyGlobalSettings', mavenLocalRepo: '~.m2/repository' ) {
-			sh "mvn compile"	   
-		}
-    }
+//    stage 'compile' {
+//		withMaven( maven: 'Maven3.3.9', mavenSettinsConfig: 'MyGlobalSettings', mavenLocalRepo: '~.m2/repository' ) {
+//			sh "mvn compile"	   
+//		}
+//    }
     
-	stage 'test' {
-		withMaven( maven: 'Maven3.3.9', mavenSettinsConfig: 'MyGlobalSettings', mavenLocalRepo: '~.m2/repository' ) {
-			sh "mvn test"	   
-		}
-    }
+//	stage 'test' {
+//		withMaven( maven: 'Maven3.3.9', mavenSettinsConfig: 'MyGlobalSettings', mavenLocalRepo: '~.m2/repository' ) {
+//			sh "mvn test"	   
+//		}
+//    }
 	
-	stage 'package' {
-		withMaven( maven: 'Maven3.3.9', mavenSettinsConfig: 'MyGlobalSettings', mavenLocalRepo: '~.m2/repository' ) {
-			sh "mvn package"	   
-		}
-    }
+//	stage 'package' {
+//		withMaven( maven: 'Maven3.3.9', mavenSettinsConfig: 'MyGlobalSettings', mavenLocalRepo: '~.m2/repository' ) {
+//			sh "mvn package"	   
+//		}
+//    }
 	   
 } 
