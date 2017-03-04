@@ -1,5 +1,5 @@
 node() {
-	stage 'Checkout' {
+	stage 'checkout' {
 	   git url: 'git@github.com:wbrune42/VaadinDemo.git'
 	}
 
