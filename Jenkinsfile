@@ -2,9 +2,9 @@ node() {
 	stage 'checkout' {
 	   // credentialsId from <jenkins-home>/credentials.xml
 	   //git credentialsId: '7bda2bf1-c288-409a-b250-0e8180b6a072', url: 'ssh://git@github.com:wbrune42/VaadinDemo.git'
-	   checkout([$class: 'GitSCM', doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkinsWithSSH', url: 'git@github.com:wbrune42/VaadinDemo.git']]])
+	   // checkout([$class: 'GitSCM', doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkinsWithSSH', url: 'git@github.com:wbrune42/VaadinDemo.git']]])
 	   // checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkinsWithSSH', url: 'git@github.com:wbrune42/VaadinDemo.git']]])
-	   
+	   checkout scm 
 	   
 	   // userRemoteConfigs: [[credentialsId: 'jenkinsWithSSH', url: 'git@github.com:wbrune42/VaadinDemo.git']]])
 	   
