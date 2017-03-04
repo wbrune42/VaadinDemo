@@ -1,6 +1,6 @@
 node() {
 	stage 'checkout' {
-	   git url: 'git@github.com:wbrune42/VaadinDemo.git'
+	   git url: 'ssh://git@github.com:wbrune42/VaadinDemo.git'
 	}
 
     stage 'clean' {
